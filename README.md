@@ -6,6 +6,9 @@ especially on low-level languages
 - Becoming language agnostic
 - Some opengl projects
 
+[![alieron's Streak-Dark](https://github-readme-streak-stats.herokuapp.com/?user=alieron&hide_border=true&theme=dark#gh-dark-mode-only)](https://github-readme-streak-stats.herokuapp.com/#gh-dark-mode-only)
+[![alieron's Streak-Light](https://github-readme-streak-stats.herokuapp.com/?user=alieron&hide_border=true&theme=default#gh-light-mode-only)](https://github-readme-streak-stats.herokuapp.com/#gh-light-mode-only)
+
 ### My Skills 🚀
 [![My Skills](https://skillicons.dev/icons?i=c,cpp,python,js,ts,java)](https://skillicons.dev)
 
