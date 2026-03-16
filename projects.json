@@ -1,0 +1,41 @@
+{
+  "username": "alieron",
+  "categories": {
+    "full afterburner": [
+      "protocol-ml",
+      "cardinal",
+      "lambda",
+      "multiballs"
+    ],
+    "working": [
+      "microtube",
+      "linasm",
+      "euler-ml",
+      "roots",
+      "obsidian-sequencer",
+      "obsidian-symbol-mapper"
+    ],
+    "complete": [
+      "cube_rendered_in_terminal",
+      "hand_tracking",
+      "koch_snowflake"
+    ],
+    "perpetual": [
+      "labyrinth",
+      "biblio"
+    ],
+    "done for now": [
+      "spase",
+      "png_utils"
+    ],
+    "pause": [
+      "quill"
+    ],
+    "deadlock": [
+      "axist",
+      "flywheel",
+      "caliberscan"
+    ]
+  },
+  "repos": {}
+}
