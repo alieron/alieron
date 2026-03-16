@@ -7,8 +7,8 @@ on:
     paths:
       - 'projects.yml'    # if config is changed
   schedule:
-    - cron: '5 * * * *'   # hourly
-  workflow_dispatch:
+    - cron: '0 0 1 * *'   # monthly
+  workflow_dispatch:      # manually trigger if important
 
 permissions:
   contents: write
