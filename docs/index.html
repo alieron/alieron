@@ -59,7 +59,6 @@
 
       .repo {
         display: grid;
-        grid-template-columns: 1fr auto;
         align-items: start;
         gap: 8px 16px;
         padding: 10px 14px;
@@ -75,7 +74,10 @@
       }
 
       .repo-main {
-        min-width: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
       }
 
       .repo a {
@@ -95,14 +97,13 @@
         font-size: 0.95rem;
       }
 
-      .repo p {
-        margin: 3px 0 0;
-        font-size: 0.85rem;
-        color: #6e7681;
-        // white-space: nowrap;
-        overflow-wrap: normal;
-        // overflow: hidden;
-        // text-overflow: ellipsis;
+
+
+      .repo-left {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        min-width: 0;
       }
 
       .repo-meta {
@@ -111,6 +112,12 @@
         gap: 10px;
         flex-shrink: 0;
         padding-top: 2px;
+      }
+
+      .repo-desc {
+        margin: 3px 0 0;
+        font-size: 0.85rem;
+        color: #6e7681;
       }
 
       .lang {
@@ -184,28 +191,24 @@
               card.innerHTML = `
                 <div class="repo-main">
                   <span class="repo-name-plain">${name}</span>
-                  <p>-</p>
-                </div>`
-            } else if (data.isPrivate) {
-              card.innerHTML = `
-                <div class="repo-main">
-                  <span class="repo-name-plain">${name}</span>
-                  <p>${data.description ?? '-'}</p>
                 </div>
-                <div class="repo-meta">
-                  <span class="badge-private">private</span>
-                </div>`
+                <p class="repo-desc">-</p>`
             } else {
               const lang = data.language
               const color = LANG_COLORS[lang] ?? '#8b949e'
               card.innerHTML = `
                 <div class="repo-main">
-                  <a href="${data.url}" target="_blank">${data.name}</a>
-                  <p title="${data.description ?? ''}">${data.description ?? '-'}</p>
+                  <div class="repo-left">
+                    ${ data.isPrivate ? 
+                        `<span class="repo-name-plain">${name}</span>
+                        <span class="badge-private">private</span>` :
+                        `<a href="${data.url}" target="_blank">${data.name}</a>`}
+                  </div>
+                  <div class="repo-meta">
+                    ${lang ? `<span class="lang">${lang}</span>` : ''}
+                  </div>
                 </div>
-                <div class="repo-meta">
-                ${lang ? `<span class="lang">${lang}</span>` : ''}
-                </div>`
+                <p class="repo-desc">${data.description ?? '-'}</p>`
               card.style.setProperty('--lang-color', color)
             }
 
