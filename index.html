@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Project Tracker</title>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+      *, *::before, *::after { box-sizing: border-box; }
+
+      body {
+        font-family: 'JetBrains Mono', monospace;
+        background: #0d1117;
+        color: #c9d1d9;
+        padding: 48px 40px;
+        max-width: 860px;
+        margin: 0 auto;
+      }
+
+      h1 {
+        font-size: 1.1rem;
+        font-weight: 500;
+        color: #e6edf3;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        margin: 0 0 48px;
+      }
+
+      h1 span {
+        color: #3fb950;
+      }
+
+      .category {
+        margin-bottom: 40px;
+      }
+
+      .category-header {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 10px;
+      }
+
+      .category-header h2 {
+        font-size: 0.7rem;
+        font-weight: 500;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: #3fb950;
+        margin: 0;
+      }
+
+      .category-header::after {
+        content: '';
+        flex: 1;
+        height: 1px;
+        background: #21262d;
+      }
+
+      .repo {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        align-items: start;
+        gap: 8px 16px;
+        padding: 10px 14px;
+        border-radius: 4px;
+        margin: 4px 0;
+        border: 1px solid transparent;
+        transition: border-color 0.15s, background 0.15s;
+      }
+
+      .repo:hover {
+        background: #161b22;
+        border-color: #30363d;
+      }
+
+      .repo-main {
+        min-width: 0;
+      }
+
+      .repo a {
+        color: #58a6ff;
+        font-weight: 500;
+        font-size: 0.85rem;
+        text-decoration: none;
+      }
+
+      .repo a:hover {
+        text-decoration: underline;
+      }
+
+      .repo-name-plain {
+        color: #8b949e;
+        font-weight: 500;
+        font-size: 0.85rem;
+      }
+
+      .repo p {
+        margin: 3px 0 0;
+        font-size: 0.78rem;
+        color: #6e7681;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .repo-meta {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        flex-shrink: 0;
+        padding-top: 2px;
+      }
+
+      .lang {
+        font-size: 0.7rem;
+        color: #484f58;
+        white-space: nowrap;
+      }
+
+      .lang::before {
+        content: '●  ';
+        color: #3fb950;
+        font-size: 0.6rem;
+      }
+
+      .badge-private {
+        font-size: 0.65rem;
+        letter-spacing: 0.06em;
+        color: #6e7681;
+        border: 1px solid #30363d;
+        border-radius: 3px;
+        padding: 1px 6px;
+      }
+
+      .loading {
+        font-size: 0.75rem;
+        color: #484f58;
+        padding: 10px 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>// <span>projects</span></h1>
+    <div id="projects"></div>
+    <script>
+      async function loadProjects() {
+        const container = document.getElementById("projects")
+
+        const { categories, repos } = await fetch('projects.json').then(r => r.json())
+
+        for (const [category, repoNames] of Object.entries(categories)) {
+          const section = document.createElement("div")
+          section.className = "category"
+
+          const header = document.createElement("div")
+          header.className = "category-header"
+          const title = document.createElement("h2")
+          title.textContent = category
+          header.appendChild(title)
+          section.appendChild(header)
+
+          for (const name of repoNames) {
+            const card = document.createElement("div")
+            card.className = "repo"
+            const data = repos[name]
+
+            if (!data) {
+              card.innerHTML = `
+                <div class="repo-main">
+                  <span class="repo-name-plain">${name}</span>
+                  <p>—</p>
+                </div>`
+            } else if (data.isPrivate) {
+              card.innerHTML = `
+                <div class="repo-main">
+                  <span class="repo-name-plain">${name}</span>
+                  <p>${data.description ?? '—'}</p>
+                </div>
+                <div class="repo-meta">
+                  <span class="badge-private">private</span>
+                </div>`
+            } else {
+              const lang = data.primaryLanguage?.name
+              card.innerHTML = `
+                <div class="repo-main">
+                  <a href="${data.url}" target="_blank">${data.name}</a>
+                  <p title="${data.description ?? ''}">${data.description ?? '—'}</p>
+                </div>
+                <div class="repo-meta">
+                  ${lang ? `<span class="lang">${lang}</span>` : ''}
+                </div>`
+            }
+
+            section.appendChild(card)
+          }
+
+          container.appendChild(section)
+        }
+      }
+
+      loadProjects()
+    </script>
+  </body>
+</html>
