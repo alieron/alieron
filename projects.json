@@ -1,0 +1,189 @@
+{
+  "username": "alieron",
+  "categories": {
+    "full afterburner": [
+      "protocol-ml",
+      "cardinal",
+      "lambda",
+      "multiballs"
+    ],
+    "working": [
+      "microtube",
+      "linasm",
+      "euler-ml",
+      "roots",
+      "obsidian-sequencer",
+      "obsidian-symbol-mapper"
+    ],
+    "complete": [
+      "cube_rendered_in_terminal",
+      "hand_tracking",
+      "koch_snowflake"
+    ],
+    "perpetual": [
+      "labyrinth",
+      "biblio"
+    ],
+    "done for now": [
+      "spase",
+      "png_utils"
+    ],
+    "pause": [
+      "quill"
+    ],
+    "deadlock": [
+      "axist",
+      "flywheel",
+      "caliberscan"
+    ]
+  },
+  "repos": {
+    "koch_snowflake": {
+      "name": "koch_snowflake",
+      "description": null,
+      "url": "https://github.com/alieron/koch_snowflake",
+      "isPrivate": false,
+      "language": "Python"
+    },
+    "hand_tracking": {
+      "name": "hand_tracking",
+      "description": null,
+      "url": "https://github.com/alieron/hand_tracking",
+      "isPrivate": true,
+      "language": "Python"
+    },
+    "cube_rendered_in_terminal": {
+      "name": "cube_rendered_in_terminal",
+      "description": "First project in C, learning about rasterization, z-buffer and surface normals by making a 3D cube spin in the terminal via ANSI escape codes.",
+      "url": "https://github.com/alieron/cube_rendered_in_terminal",
+      "isPrivate": false,
+      "language": "C++"
+    },
+    "caliberscan": {
+      "name": "caliberscan",
+      "description": null,
+      "url": "https://github.com/alieron/caliberscan",
+      "isPrivate": false,
+      "language": "Python"
+    },
+    "quill": {
+      "name": "quill",
+      "description": "An imitation of the minecraft rendering engine to serve as an integrated editor and previewer for texturepacks, created by reverse engineering the minecraft rendering engine and its use of .json files to store block models.",
+      "url": "https://github.com/alieron/quill",
+      "isPrivate": false,
+      "language": "C++"
+    },
+    "png_utils": {
+      "name": "png_utils",
+      "description": "A simple PNG encoder/decoder header file, for loading small 8-bit images in other rendering projects. Learning more about C++ and the PNG specification through this project.",
+      "url": "https://github.com/alieron/png_utils",
+      "isPrivate": false,
+      "language": "C++"
+    },
+    "flywheel": {
+      "name": "flywheel",
+      "description": "Simple 2D constraint solver",
+      "url": "https://github.com/alieron/flywheel",
+      "isPrivate": false,
+      "language": null
+    },
+    "axist": {
+      "name": "axist",
+      "description": "2D/3D graph/function renderer made with OpenGL and ImGUI",
+      "url": "https://github.com/alieron/axist",
+      "isPrivate": false,
+      "language": null
+    },
+    "obsidian-sequencer": {
+      "name": "obsidian-sequencer",
+      "description": "Obsidian plugin for organising notes in a sequence and navigating through the sequence.",
+      "url": "https://github.com/alieron/obsidian-sequencer",
+      "isPrivate": false,
+      "language": "TypeScript"
+    },
+    "roots": {
+      "name": "roots",
+      "description": null,
+      "url": "https://github.com/alieron/roots",
+      "isPrivate": false,
+      "language": "CSS"
+    },
+    "labyrinth": {
+      "name": "labyrinth",
+      "description": "Framework for publishing my obsidian notes. Made with Astro and Remark/Rehype. Supports math rendering with MathJax/TikZJax and syntax highlighting with Shiki.",
+      "url": "https://github.com/alieron/labyrinth",
+      "isPrivate": false,
+      "language": "TypeScript"
+    },
+    "biblio": {
+      "name": "biblio",
+      "description": null,
+      "url": "https://github.com/alieron/biblio",
+      "isPrivate": true,
+      "language": null
+    },
+    "euler-ml": {
+      "name": "euler-ml",
+      "description": "Categorise things with a visual euler/venn diagram using markup style code.",
+      "url": "https://github.com/alieron/euler-ml",
+      "isPrivate": false,
+      "language": "TypeScript"
+    },
+    "cardinal": {
+      "name": "cardinal",
+      "description": "Stack-based esoteric programming language",
+      "url": "https://github.com/alieron/cardinal",
+      "isPrivate": false,
+      "language": "C"
+    },
+    "multiballs": {
+      "name": "multiballs",
+      "description": "Metaballs implemented across multiple processes",
+      "url": "https://github.com/alieron/multiballs",
+      "isPrivate": false,
+      "language": "C"
+    },
+    "lambda": {
+      "name": "lambda",
+      "description": "Lambda calculus REPL",
+      "url": "https://github.com/alieron/lambda",
+      "isPrivate": false,
+      "language": "C"
+    },
+    "obsidian-symbol-mapper": {
+      "name": "obsidian-symbol-mapper",
+      "description": "Search for UTF-8 special characters using your own keywords.",
+      "url": "https://github.com/alieron/obsidian-symbol-mapper",
+      "isPrivate": false,
+      "language": "TypeScript"
+    },
+    "protocol-ml": {
+      "name": "protocol-ml",
+      "description": "Markup language for rendering network protocol diagrams.",
+      "url": "https://github.com/alieron/protocol-ml",
+      "isPrivate": false,
+      "language": "TypeScript"
+    },
+    "linasm": {
+      "name": "linasm",
+      "description": "Single header linear algebra library with computations implemented with inline assembly.",
+      "url": "https://github.com/alieron/linasm",
+      "isPrivate": true,
+      "language": null
+    },
+    "spase": {
+      "name": "spase",
+      "description": "Simple API that aggregates space events such as CMEs and solar flares, hosted on github pages, updated daily using github actions.",
+      "url": "https://github.com/alieron/spase",
+      "isPrivate": false,
+      "language": "Python"
+    },
+    "microtube": {
+      "name": "microtube",
+      "description": "Break your youtube addiction by limiting your feed to a curated set of channels.",
+      "url": "https://github.com/alieron/microtube",
+      "isPrivate": true,
+      "language": null
+    }
+  }
+}
