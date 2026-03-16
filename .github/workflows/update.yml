@@ -9,6 +9,12 @@ on:
   schedule:
     - cron: '0 0 1 * *'   # monthly
   workflow_dispatch:      # manually trigger if important
+    inputs:
+      force_deploy:
+        description: "Force deploy"
+        type: boolean
+        default: false
+        required: true
 
 permissions:
   contents: write
@@ -53,7 +59,7 @@ jobs:
 
   deploy:
     needs: update
-    if: needs.update.outputs.changed == 'true'
+    if: needs.update.outputs.changed == 'true' || inputs.force_deploy == 'true'
     runs-on: ubuntu-latest
     
     environment:
