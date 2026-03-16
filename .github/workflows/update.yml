@@ -24,7 +24,7 @@ jobs:
 
       - name: Run update.py
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.REPO_TOKEN }}
         run: python3 update.py
 
       - name: Commit if changed
