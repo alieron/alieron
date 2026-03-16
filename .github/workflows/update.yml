@@ -24,6 +24,9 @@ jobs:
   update:
     runs-on: ubuntu-latest
 
+    outputs:
+      changed: ${{ steps.changes.outputs.changed }}
+
     steps:
       - uses: actions/checkout@v6
 
