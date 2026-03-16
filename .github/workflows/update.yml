@@ -1,6 +1,11 @@
 name: Update projects.json
 
 on:
+  push:
+    branches:
+      - 'master'
+    paths:
+      - 'projects.yml'    # if config is changed
   schedule:
     - cron: '5 * * * *'   # hourly
   workflow_dispatch:
