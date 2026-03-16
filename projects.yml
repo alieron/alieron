@@ -8,12 +8,11 @@ categories:
     - multiballs
 
   working:
+    - brick-index
+    - wave
     - microtube
     - linasm
     - euler-ml
-    - roots
-    - obsidian-sequencer
-    - obsidian-symbol-mapper
 
   complete:
     - cube_rendered_in_terminal
@@ -23,12 +22,15 @@ categories:
   perpetual:
     - labyrinth
     - biblio
+    - obsidian-sequencer
+    - obsidian-symbol-mapper
 
   "done for now":
     - spase
     - png_utils
 
   pause:
+    - roots
     - quill
 
   deadlock:
