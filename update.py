@@ -52,5 +52,5 @@ repo_map = {
 
 output = {"username": username, "categories": categories, "repos": repo_map}
 
-with open("projects.json", "w") as f:
+with open("docs/projects.json", "w") as f:
     json.dump(output, f, indent=2)
