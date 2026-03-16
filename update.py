@@ -38,7 +38,17 @@ req = urllib.request.Request(
 with urllib.request.urlopen(req) as res:
     nodes = json.loads(res.read())["data"]["viewer"]["repositories"]["nodes"]
 
-repo_map = {r["name"]: r for r in nodes if r["name"] in allowlist}
+repo_map = {
+    r["name"]: {
+        "name": r["name"],
+        "description": r.get("description"),
+        "url": r.get("url"),
+        "isPrivate": r.get("isPrivate"),
+        "language": r["primaryLanguage"]["name"] if r.get("primaryLanguage") else None,
+    }
+    for r in nodes
+    if r["name"] in allowlist
+}
 
 output = {"username": username, "categories": categories, "repos": repo_map}
 
