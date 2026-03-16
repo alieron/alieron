@@ -8,12 +8,11 @@
       "multiballs"
     ],
     "working": [
+      "brick-index",
+      "wave",
       "microtube",
       "linasm",
-      "euler-ml",
-      "roots",
-      "obsidian-sequencer",
-      "obsidian-symbol-mapper"
+      "euler-ml"
     ],
     "complete": [
       "cube_rendered_in_terminal",
@@ -22,13 +21,16 @@
     ],
     "perpetual": [
       "labyrinth",
-      "biblio"
+      "biblio",
+      "obsidian-sequencer",
+      "obsidian-symbol-mapper"
     ],
     "done for now": [
       "spase",
       "png_utils"
     ],
     "pause": [
+      "roots",
       "quill"
     ],
     "deadlock": [
@@ -40,14 +42,14 @@
   "repos": {
     "koch_snowflake": {
       "name": "koch_snowflake",
-      "description": null,
+      "description": "Script for generating and drawing the recursive koch snowflake fractal.",
       "url": "https://github.com/alieron/koch_snowflake",
       "isPrivate": false,
       "language": "Python"
     },
     "hand_tracking": {
       "name": "hand_tracking",
-      "description": null,
+      "description": "Simple camera hand tracker using a pre-trained model, with a matplotlib 3D plot visualising the position of landmark points.",
       "url": "https://github.com/alieron/hand_tracking",
       "isPrivate": true,
       "language": "Python"
@@ -103,7 +105,7 @@
     },
     "roots": {
       "name": "roots",
-      "description": null,
+      "description": "Collaborative family tree tracking using D3 graphs instead of the traditional tree structure.",
       "url": "https://github.com/alieron/roots",
       "isPrivate": false,
       "language": "CSS"
@@ -183,6 +185,20 @@
       "description": "Break your youtube addiction by limiting your feed to a curated set of channels.",
       "url": "https://github.com/alieron/microtube",
       "isPrivate": true,
+      "language": null
+    },
+    "brick-index": {
+      "name": "brick-index",
+      "description": "Bloomberg terminal style price tracker for LEGO minifigures.",
+      "url": "https://github.com/alieron/brick-index",
+      "isPrivate": true,
+      "language": null
+    },
+    "wave": {
+      "name": "wave",
+      "description": "Ocean wave simulator as a practical self-directed learning tool to help students understand the fast fourier transform. Built for CS2108 project.",
+      "url": "https://github.com/alieron/wave",
+      "isPrivate": false,
       "language": null
     }
   }
