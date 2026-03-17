@@ -5,6 +5,7 @@ on:
     branches:
       - 'master'
     paths:
+      - 'docs/**'
       - 'projects.yml'    # if config is changed
   schedule:
     - cron: '0 0 1 * *'   # monthly
