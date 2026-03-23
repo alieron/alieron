@@ -8,10 +8,11 @@ categories:
     - multiballs
 
   working:
+    - launch-tracker
+    - dnfaction
     - brick-index
     - wave
     - microtube
-    - linasm
     - euler-ml
 
   complete:
@@ -30,6 +31,7 @@ categories:
     - png_utils
 
   pause:
+    - linasm
     - roots
     - quill
 
