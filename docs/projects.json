@@ -8,10 +8,11 @@
       "multiballs"
     ],
     "working": [
+      "launch-tracker",
+      "dnfaction",
       "brick-index",
       "wave",
       "microtube",
-      "linasm",
       "euler-ml"
     ],
     "complete": [
@@ -30,6 +31,7 @@
       "png_utils"
     ],
     "pause": [
+      "linasm",
       "roots",
       "quill"
     ],
@@ -140,7 +142,7 @@
     },
     "multiballs": {
       "name": "multiballs",
-      "description": "Metaballs implemented across multiple processes",
+      "description": "Metaballs implemented across multiple windows with multithreading, using software rendering with X11.",
       "url": "https://github.com/alieron/multiballs",
       "isPrivate": false,
       "language": "C"
@@ -199,7 +201,21 @@
       "description": "Ocean wave simulator as a practical self-directed learning tool to help students understand the fast fourier transform. Built for CS2108 project.",
       "url": "https://github.com/alieron/wave",
       "isPrivate": false,
+      "language": "TypeScript"
+    },
+    "dnfaction": {
+      "name": "dnfaction",
+      "description": "Using github actions in ways never intended, running DFA/NFAs.",
+      "url": "https://github.com/alieron/dnfaction",
+      "isPrivate": true,
       "language": null
+    },
+    "launch-tracker": {
+      "name": "launch-tracker",
+      "description": "Tracking past and upcoming launches from open APIs and automating post launch follow-up.",
+      "url": "https://github.com/alieron/launch-tracker",
+      "isPrivate": false,
+      "language": "HTML"
     }
   }
 }
