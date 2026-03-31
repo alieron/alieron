@@ -8,14 +8,13 @@ categories:
     - multiballs
 
   working:
-    - launch-tracker
-    - dnfaction
-    - brick-index
-    - wave
-    - microtube
     - euler-ml
+    - spase
+    - workmon
+    - wya
 
   complete:
+    - wave
     - cube_rendered_in_terminal
     - hand_tracking
     - koch_snowflake
@@ -27,10 +26,13 @@ categories:
     - obsidian-symbol-mapper
 
   "done for now":
-    - spase
+    - launch-tracker
     - png_utils
 
   pause:
+    - dnfaction
+    - brick-index
+    - microtube
     - linasm
     - roots
     - quill
