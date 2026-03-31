@@ -8,14 +8,13 @@
       "multiballs"
     ],
     "working": [
-      "launch-tracker",
-      "dnfaction",
-      "brick-index",
-      "wave",
-      "microtube",
-      "euler-ml"
+      "euler-ml",
+      "spase",
+      "workmon",
+      "wya"
     ],
     "complete": [
+      "wave",
       "cube_rendered_in_terminal",
       "hand_tracking",
       "koch_snowflake"
@@ -27,10 +26,13 @@
       "obsidian-symbol-mapper"
     ],
     "done for now": [
-      "spase",
+      "launch-tracker",
       "png_utils"
     ],
     "pause": [
+      "dnfaction",
+      "brick-index",
+      "microtube",
       "linasm",
       "roots",
       "quill"
@@ -216,6 +218,20 @@
       "url": "https://github.com/alieron/launch-tracker",
       "isPrivate": false,
       "language": "HTML"
+    },
+    "wya": {
+      "name": "wya",
+      "description": "Keep track of where your friends are throughout the week. Using data from NUSMODS.",
+      "url": "https://github.com/alieron/wya",
+      "isPrivate": true,
+      "language": null
+    },
+    "workmon": {
+      "name": "workmon",
+      "description": "Monitor workflow runs across all your repos via a single TUI.",
+      "url": "https://github.com/alieron/workmon",
+      "isPrivate": true,
+      "language": "Python"
     }
   }
 }
