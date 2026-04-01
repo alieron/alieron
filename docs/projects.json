@@ -4,8 +4,7 @@
     "full afterburner": [
       "protocol-ml",
       "cardinal",
-      "lambda",
-      "multiballs"
+      "lambda"
     ],
     "working": [
       "euler-ml",
@@ -26,6 +25,7 @@
       "obsidian-symbol-mapper"
     ],
     "done for now": [
+      "multiballs",
       "launch-tracker",
       "png_utils"
     ],
