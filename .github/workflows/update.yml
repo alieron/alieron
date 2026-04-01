@@ -1,4 +1,4 @@
-name: Update projects.json
+name: Update and deploy
 
 on:
   push:
@@ -17,7 +17,26 @@ permissions:
   id-token: write
 
 jobs:
+  # check for changes to projects.yml
+  changes:
+    runs-on: ubuntu-latest
+    outputs:
+      projects_changed: ${{ steps.filter.outputs.changed }}
+
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: dorny/paths-filter@v4
+        id: filter
+        with:
+          filters: |
+            changed:
+              - 'projects.yml'
+
   update:
+    # update projects if the yml was changed or if this is a scheduled run
+    needs: changes
+    if: needs.changes.outputs.projects_changed == 'true' || github.event_name != 'push'
     runs-on: ubuntu-latest
 
     steps:
@@ -35,41 +54,54 @@ jobs:
           GH_TOKEN: ${{ secrets.REPO_TOKEN }}
         run: python3 update.py
 
-      - name: Check for changes
-        id: changes
+      - name: Commit if changed
         run: | 
           git add docs/projects.json
           if git diff --cached --quiet; then
-            echo "changed=false" >> $GITHUB_OUTPUT
+            echo "No changes"
           else
-            echo "changed=true" >> $GITHUB_OUTPUT
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git commit -m "Update projects.json"
+            git push
           fi
 
-      - name: Commit and push 
-        if: steps.changes.outputs.changed == 'true'
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git commit -m "Update projects.json"
-          git push
+      - name: Upload artifact
+        uses: actions/upload-artifact@v7
+        with:
+          name: docs
+          path: docs
 
   deploy:
-    needs: update
+    # run deploy last
+    needs: [changes, update]
+    if: always()
     runs-on: ubuntu-latest
     
     environment:
       name: github-pages
     
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout (fallback)
+        # checkout if update was skipped or failed
+        if: needs.update.result != 'success'
+        uses: actions/checkout@v6
+
+      - name: Download artifact from update job
+        # else use the artifact from update
+        if: needs.update.result == 'success'
+        uses: actions/download-artifact@v8
+        with:
+          name: docs
+          path: docs
     
       - name: Setup Pages
-        uses: actions/configure-pages@v4
+        uses: actions/configure-pages@v6
     
       - name: Upload docs artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v4
         with:
           path: ./docs
-    
+
       - name: Deploy
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
