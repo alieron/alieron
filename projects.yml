@@ -5,7 +5,6 @@ categories:
     - protocol-ml
     - cardinal
     - lambda
-    - multiballs
 
   working:
     - euler-ml
@@ -26,6 +25,7 @@ categories:
     - obsidian-symbol-mapper
 
   "done for now":
+    - multiballs
     - launch-tracker
     - png_utils
 
