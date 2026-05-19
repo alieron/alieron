@@ -1,0 +1,19 @@
+---
+import ProjectSection from "@/components/ProjectSection.astro";
+import SiteHeader from "@/components/SiteHeader.astro";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import projectsJson from "@/data/projects.json";
+import type { ProjectsData } from "@/types";
+
+const data = projectsJson as ProjectsData;
+const categories = Object.entries(data.categories);
+const projectCount = categories.reduce((total, [, names]) => total + names.length, 0);
+---
+
+<BaseLayout>
+  <SiteHeader username={data.username} projectCount={projectCount} categoryCount={categories.length} />
+
+  <main class="mx-auto grid w-full max-w-6xl gap-10 px-5 pb-16 sm:px-8 lg:px-10">
+    {categories.map(([category, names]) => <ProjectSection category={category} names={names} repos={data.repos} />)}
+  </main>
+</BaseLayout>

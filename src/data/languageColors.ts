@@ -1,0 +1,20 @@
+// taken from: https://github.com/github-linguist/linguist/blob/main/lib/linguist/languages.yml
+export const languageColors: Record<string, string> = {
+  Python: "#3572a5",
+  C: "#555555",
+  "C++": "#f34b7d",
+  HolyC: "#ffefaf",
+  JavaScript: "#f1e05a",
+  TypeScript: "#3178c6",
+  Java: "#b07219",
+  Lua: "#000080",
+  Shell: "#89e051",
+  HTML: "#e34c26",
+  CSS: "#563d7c",
+  Rust: "#dea584",
+  Go: "#00add8",
+  Zig: "#ec915c",
+  Odin: "#60affe",
+  Astro: "#ff5a03",
+  Haskell: "#5e5086",
+};

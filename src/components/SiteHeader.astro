@@ -1,0 +1,19 @@
+---
+type Props = {
+  username: string;
+  projectCount: number;
+  categoryCount: number;
+};
+
+const { username, projectCount, categoryCount } = Astro.props;
+const githubUrl = `https://github.com/${username}`;
+---
+
+<header class="mx-auto flex w-full max-w-6xl flex-col gap-7 px-5 pt-10 pb-8 sm:px-8 lg:px-10">
+  <nav class="flex items-center justify-between gap-4 uppercase tracking-[0.12em] text-muted">
+    <a class="text-accent transition hover:text-accent-strong" href={githubUrl} target="_blank" rel="noreferrer">
+      github/{username}
+    </a>
+    <span>{projectCount} projects</span>
+  </nav>
+</header>

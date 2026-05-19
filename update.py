@@ -52,5 +52,7 @@ repo_map = {
 
 output = {"username": username, "categories": categories, "repos": repo_map}
 
-with open("docs/projects.json", "w") as f:
+os.makedirs("src/data", exist_ok=True)
+
+with open("src/data/projects.json", "w") as f:
     json.dump(output, f, indent=2)
