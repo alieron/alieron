@@ -3,14 +3,18 @@ username: alieron
 categories:
   "full afterburner":
     - protocol-ml
+    - debth
+    - Hackari/wholesome
+
+  "slow and steady":
     - cardinal
     - lambda
-
-  working:
     - euler-ml
-    - spase
     - workmon
     - wya
+
+  "open source":
+    - e18e/cli
 
   complete:
     - wave
@@ -21,10 +25,12 @@ categories:
   perpetual:
     - labyrinth
     - biblio
+    - sync-path-pr-action
     - obsidian-sequencer
     - obsidian-symbol-mapper
 
   "done for now":
+    - spase
     - multiballs
     - launch-tracker
     - png_utils
