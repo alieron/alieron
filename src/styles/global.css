@@ -2,17 +2,17 @@
 
 @theme {
   --font-mono: "JetBrains Mono", "SFMono-Regular", Consolas, monospace;
-  --color-page: #080a0f;
-  --color-panel: #0d1118;
-  --color-panel-soft: #111720;
-  --color-line: #202836;
-  --color-divider: #394456;
-  --color-line-strong: #2f89ff;
-  --color-text: #f0f4f8;
-  --color-muted: #a6b1bf;
-  --color-faint: #6f7d8e;
-  --color-accent: #4aa3ff;
-  --color-accent-strong: #8ecbff;
+  --color-page: #010407;
+  --color-panel: #060d12;
+  --color-panel-soft: #0a151b;
+  --color-line: #16242c;
+  --color-divider: #22333d;
+  --color-line-strong: #2f8fd1;
+  --color-text: #e5edf2;
+  --color-muted: #92a1aa;
+  --color-faint: #60717c;
+  --color-accent: #63b7e6;
+  --color-accent-strong: #9ad8f2;
 }
 
 @layer base {
@@ -24,11 +24,7 @@
   body {
     min-height: 100vh;
     margin: 0;
-    background:
-      linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px),
-      var(--color-page);
-    background-size: 48px 48px, 48px 48px, auto;
+    background: var(--color-page);
     color: var(--color-text);
     font-family: var(--font-mono);
     font-size: 17px;
@@ -40,6 +36,6 @@
   }
 
   ::selection {
-    background: rgba(56, 167, 255, 0.32);
+    background: rgba(75, 177, 225, 0.26);
   }
 }
