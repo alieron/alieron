@@ -3,14 +3,18 @@
   "categories": {
     "full afterburner": [
       "protocol-ml",
-      "cardinal",
-      "lambda"
+      "debth",
+      "Hackari/wholesome"
     ],
-    "working": [
+    "slow and steady": [
+      "cardinal",
+      "lambda",
       "euler-ml",
-      "spase",
       "workmon",
       "wya"
+    ],
+    "open source": [
+      "e18e/cli"
     ],
     "complete": [
       "wave",
@@ -21,10 +25,12 @@
     "perpetual": [
       "labyrinth",
       "biblio",
+      "sync-path-pr-action",
       "obsidian-sequencer",
       "obsidian-symbol-mapper"
     ],
     "done for now": [
+      "spase",
       "multiballs",
       "launch-tracker",
       "png_utils"
@@ -102,7 +108,7 @@
     },
     "obsidian-sequencer": {
       "name": "obsidian-sequencer",
-      "description": "Obsidian plugin for organising notes in a sequence and navigating through the sequence.",
+      "description": "Organise the notes in your vault as a sequence and navigating through them like a doubly-linked list.",
       "url": "https://github.com/alieron/obsidian-sequencer",
       "isPrivate": false,
       "language": "TypeScript"
@@ -223,8 +229,8 @@
       "name": "wya",
       "description": "Keep track of where your friends are throughout the week. Using data from NUSMODS.",
       "url": "https://github.com/alieron/wya",
-      "isPrivate": true,
-      "language": null
+      "isPrivate": false,
+      "language": "TypeScript"
     },
     "workmon": {
       "name": "workmon",
@@ -232,6 +238,34 @@
       "url": "https://github.com/alieron/workmon",
       "isPrivate": true,
       "language": "Python"
+    },
+    "sync-path-pr-action": {
+      "name": "sync-path-pr-action",
+      "description": "Github action to sync files/directories from another repo into a specified directory in the current repo.",
+      "url": "https://github.com/alieron/sync-path-pr-action",
+      "isPrivate": false,
+      "language": "TypeScript"
+    },
+    "debth": {
+      "name": "debth",
+      "description": "Code review TUI to help keep track of technical debt in AI-assisted projects.",
+      "url": "https://github.com/alieron/debth",
+      "isPrivate": false,
+      "language": "Rust"
+    },
+    "Hackari/wholesome": {
+      "name": "Hackari/wholesome",
+      "description": "A wholesome bot for wholesome activities",
+      "url": "https://github.com/Hackari/wholesome",
+      "isPrivate": false,
+      "language": "TypeScript"
+    },
+    "e18e/cli": {
+      "name": "e18e/cli",
+      "description": "A powerful CLI for analyzing and optimizing your JS/TS projects.",
+      "url": "https://github.com/e18e/cli",
+      "isPrivate": false,
+      "language": "TypeScript"
     }
   }
 }
