@@ -9,6 +9,31 @@ with open("projects.yml") as f:
 username = config["username"]
 categories = config["categories"]
 allowlist = [repo for repos in categories.values() for repo in repos]
+language_threshold = config.get("language_threshold", 0.1)
+
+
+def repo_languages(repo):
+    languages = repo.get("languages") or {}
+    total_size = languages.get("totalSize") or 0
+
+    if not total_size:
+        primary = repo.get("primaryLanguage")
+        return [{"name": primary["name"], "share": 1}] if primary else []
+
+    return [
+        {
+            "name": edge["node"]["name"],
+            "color": edge["node"].get("color"),
+            "share": edge["size"] / total_size,
+        }
+        for edge in languages.get("edges", [])
+        if edge["size"] / total_size >= language_threshold
+    ]
+
+
+def repo_topics(repo):
+    topics = repo.get("repositoryTopics") or {}
+    return [node["topic"]["name"] for node in topics.get("nodes", [])]
 
 def parse_repo_ref(ref):
     if not isinstance(ref, str):
@@ -32,12 +57,16 @@ def parse_repo_ref(ref):
 
 
 def repo_payload(repo, display_name=None):
+    languages = repo_languages(repo)
+
     return {
         "name": display_name or repo["name"],
         "description": repo.get("description"),
         "url": repo.get("url"),
         "isPrivate": repo.get("isPrivate"),
-        "language": repo["primaryLanguage"]["name"] if repo.get("primaryLanguage") else None,
+        "language": languages[0]["name"] if languages else None,
+        "languages": languages,
+        "topics": repo_topics(repo),
     }
 
 
@@ -69,6 +98,18 @@ fragment RepoFields on Repository {
   url
   isPrivate
   primaryLanguage { name }
+  languages(first: 10, orderBy: { field: SIZE, direction: DESC }) {
+    totalSize
+    edges {
+      size
+      node { name color }
+    }
+  }
+  repositoryTopics(first: 12) {
+    nodes {
+      topic { name }
+    }
+  }
 }
 """.replace("__EXTERNAL_REPOS__", external_queries)
 

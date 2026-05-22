@@ -1,4 +1,5 @@
 username: alieron
+language_threshold: 0.1
 
 categories:
   "full afterburner":

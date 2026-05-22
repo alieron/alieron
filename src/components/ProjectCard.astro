@@ -8,8 +8,13 @@ type Props = {
 };
 
 const { name, project } = Astro.props;
-const language = project?.language ?? null;
-const languageColor = language ? (languageColors[language] ?? "#8ca6c2") : "#52708f";
+const languages =
+  project?.languages && project.languages.length > 0
+    ? project.languages
+    : project?.language
+      ? [{ name: project.language, color: languageColors[project.language] ?? null, share: 1 }]
+      : [];
+const topics = project?.topics ?? [];
 const isPrivate = project?.isPrivate ?? false;
 const href = project && !isPrivate ? project.url : null;
 const title = project?.name ?? name;
@@ -48,15 +53,29 @@ const description = project?.description ?? "-";
 
     <p class="text-[0.95rem] leading-6 text-muted">{description}</p>
 
-    <div class="mt-auto flex items-center gap-2 pt-5 text-sm text-faint">
-      <span class="inline-flex min-w-0 items-center gap-2">
-        {
-          language && (
-            <span class="size-3 shrink-0" style={`background:${languageColor}`}></span>
-            <span>{language}</span>
-          )
-        }
-      </span>
+    {
+      topics.length > 0 && (
+        <div class="mt-4 flex flex-wrap gap-2">
+          {topics.map((topic) => (
+            <span class="border border-line bg-page/40 px-2 py-1 text-xs text-muted">{topic}</span>
+          ))}
+        </div>
+      )
+    }
+
+    <div class="mt-auto flex flex-wrap items-center gap-x-4 gap-y-2 pt-5 text-sm text-faint">
+      {
+        languages.map((language) => (
+          <span class="inline-flex min-w-0 items-center gap-2">
+            <span
+              class="size-3 shrink-0"
+              style={`background:${language.color ?? languageColors[language.name] ?? "#8ca6c2"}`}
+            />
+            <span>{language.name}</span>
+            <!-- {language.share < 1 && <span class="text-xs">{Math.round(language.share * 100)}%</span>} -->
+          </span>
+        ))
+      }
     </div>
   </div>
 </article>
