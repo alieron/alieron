@@ -13,11 +13,11 @@ const { category, names, repos } = Astro.props;
 
 <section class="scroll-mt-8">
   <div class="mb-4 flex items-center gap-4">
-    <h2 class="shrink-0 whitespace-nowrap text-sm uppercase tracking-[0.14em] text-muted">{category}</h2>
+    <h2 class="shrink-0 whitespace-nowrap text-base uppercase tracking-[0.14em] text-muted">{category}</h2>
     <div class="min-w-8 flex-1 border-t border-divider"></div>
-    <span class="shrink-0 text-sm text-faint">{names.length}</span>
+    <span class="shrink-0 text-base text-topic">{names.length}</span>
   </div>
-  <div class="grid gap-3 md:grid-cols-2">
+  <div class="grid gap-3 md:grid-cols-2 text-">
     {names.map((name) => <ProjectCard name={name} project={repos[name]} />)}
   </div>
 </section>

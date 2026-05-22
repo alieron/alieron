@@ -2,17 +2,24 @@
 
 @theme {
   --font-mono: "JetBrains Mono", "SFMono-Regular", Consolas, monospace;
-  --color-page: #010407;
-  --color-panel: #060d12;
-  --color-panel-soft: #0a151b;
-  --color-line: #16242c;
-  --color-divider: #22333d;
-  --color-line-strong: #2f8fd1;
-  --color-text: #e5edf2;
-  --color-muted: #92a1aa;
-  --color-faint: #60717c;
-  --color-accent: #63b7e6;
-  --color-accent-strong: #9ad8f2;
+  --color-page: #030302;
+  --color-panel: #090806;
+  --color-panel-soft: #120f08;
+  --color-line: #2d2411;
+  --color-divider: #4b3815;
+  --color-line-strong: #c98724;
+  --color-text: #ffe2a0;
+  --color-muted: #c5944d;
+  --color-faint: #765f38;
+  --color-accent: #ffb23d;
+  --color-accent-strong: #ffd064;
+  --color-status: #91d35f;
+  --color-private: #e15b63;
+  --color-private-line: #8f2f3f;
+  --color-private-panel: #1a080b;
+  --color-topic: #6fc7e8;
+  --color-topic-line: #275b75;
+  --color-topic-panel: #061219;
 }
 
 @layer base {
@@ -24,7 +31,11 @@
   body {
     min-height: 100vh;
     margin: 0;
-    background: var(--color-page);
+    background:
+      linear-gradient(rgba(255, 177, 61, 0.025) 1px, transparent 1px),
+      linear-gradient(145deg, rgba(255, 177, 61, 0.06), transparent 34rem),
+      var(--color-page);
+    background-size: 100% 4px, 100% 100%, auto;
     color: var(--color-text);
     font-family: var(--font-mono);
     font-size: 17px;
@@ -36,6 +47,21 @@
   }
 
   ::selection {
-    background: rgba(75, 177, 225, 0.26);
+    background: rgba(255, 178, 61, 0.28);
+    color: #fff2c9;
+  }
+}
+
+@layer utilities {
+  .vfd-glow {
+    text-shadow:
+      0 0 0.45rem rgba(255, 178, 61, 0.42),
+      0 0 1.2rem rgba(255, 178, 61, 0.16);
+  }
+
+  .vfd-panel {
+    box-shadow:
+      inset 0 0 0 1px rgba(255, 178, 61, 0.02),
+      0 0 1.35rem rgba(255, 178, 61, 0.055);
   }
 }
