@@ -55,217 +55,528 @@
       "description": "Script for generating and drawing the recursive koch snowflake fractal.",
       "url": "https://github.com/alieron/koch_snowflake",
       "isPrivate": false,
-      "language": "Python"
+      "language": "Python",
+      "languages": [
+        {
+          "name": "Python",
+          "color": "#3572A5",
+          "share": 1.0
+        }
+      ],
+      "topics": [
+        "fractals",
+        "matplotlib"
+      ]
     },
     "hand_tracking": {
       "name": "hand_tracking",
-      "description": "Simple camera hand tracker using a pre-trained model, with a matplotlib 3D plot visualising the position of landmark points.",
+      "description": "Simple camera hand tracker using MediaPipe Hands, with a matplotlib 3D plot visualising the position of landmark points.",
       "url": "https://github.com/alieron/hand_tracking",
       "isPrivate": true,
-      "language": "Python"
+      "language": "Python",
+      "languages": [
+        {
+          "name": "Python",
+          "color": "#3572A5",
+          "share": 1.0
+        }
+      ],
+      "topics": [
+        "computer-vision",
+        "matplotlib",
+        "mediapipe-hands",
+        "opencv"
+      ]
     },
     "cube_rendered_in_terminal": {
       "name": "cube_rendered_in_terminal",
-      "description": "First project in C, learning about rasterization, z-buffer and surface normals by making a 3D cube spin in the terminal via ANSI escape codes.",
+      "description": "First project in C++, learning about rasterization, z-buffer and surface normals by making a 3D cube spin in the terminal via ANSI escape codes.",
       "url": "https://github.com/alieron/cube_rendered_in_terminal",
       "isPrivate": false,
-      "language": "C++"
+      "language": "C++",
+      "languages": [
+        {
+          "name": "C++",
+          "color": "#f34b7d",
+          "share": 0.9442204705457609
+        }
+      ],
+      "topics": [
+        "graphics",
+        "rasterization",
+        "terminal-based"
+      ]
     },
     "caliberscan": {
       "name": "caliberscan",
       "description": null,
       "url": "https://github.com/alieron/caliberscan",
       "isPrivate": false,
-      "language": "Python"
+      "language": "Python",
+      "languages": [
+        {
+          "name": "Python",
+          "color": "#3572A5",
+          "share": 0.698062792251169
+        },
+        {
+          "name": "Jupyter Notebook",
+          "color": "#DA5B0B",
+          "share": 0.301937207748831
+        }
+      ],
+      "topics": []
     },
     "quill": {
       "name": "quill",
       "description": "An imitation of the minecraft rendering engine to serve as an integrated editor and previewer for texturepacks, created by reverse engineering the minecraft rendering engine and its use of .json files to store block models.",
       "url": "https://github.com/alieron/quill",
       "isPrivate": false,
-      "language": "C++"
+      "language": "C++",
+      "languages": [
+        {
+          "name": "C++",
+          "color": "#f34b7d",
+          "share": 0.9599877825290165
+        }
+      ],
+      "topics": [
+        "opengl",
+        "renderer",
+        "imgui"
+      ]
     },
     "png_utils": {
       "name": "png_utils",
       "description": "A simple PNG encoder/decoder header file, for loading small 8-bit images in other rendering projects. Learning more about C++ and the PNG specification through this project.",
       "url": "https://github.com/alieron/png_utils",
       "isPrivate": false,
-      "language": "C++"
+      "language": "C++",
+      "languages": [
+        {
+          "name": "C++",
+          "color": "#f34b7d",
+          "share": 0.9553169882489482
+        }
+      ],
+      "topics": [
+        "png",
+        "huffman-compression",
+        "terminal-based"
+      ]
     },
     "flywheel": {
       "name": "flywheel",
       "description": "Simple 2D constraint solver",
       "url": "https://github.com/alieron/flywheel",
       "isPrivate": false,
-      "language": null
+      "language": null,
+      "languages": [],
+      "topics": []
     },
     "axist": {
       "name": "axist",
       "description": "2D/3D graph/function renderer made with OpenGL and ImGUI",
       "url": "https://github.com/alieron/axist",
       "isPrivate": false,
-      "language": null
+      "language": null,
+      "languages": [],
+      "topics": []
     },
     "obsidian-sequencer": {
       "name": "obsidian-sequencer",
       "description": "Organise the notes in your vault as a sequence and navigating through them like a doubly-linked list.",
       "url": "https://github.com/alieron/obsidian-sequencer",
       "isPrivate": false,
-      "language": "TypeScript"
+      "language": "TypeScript",
+      "languages": [
+        {
+          "name": "TypeScript",
+          "color": "#3178c6",
+          "share": 0.9188042985959567
+        }
+      ],
+      "topics": [
+        "obsidian",
+        "obsidian-plugin"
+      ]
     },
     "roots": {
       "name": "roots",
       "description": "Collaborative family tree tracking using D3 graphs instead of the traditional tree structure.",
       "url": "https://github.com/alieron/roots",
       "isPrivate": false,
-      "language": "CSS"
+      "language": "CSS",
+      "languages": [
+        {
+          "name": "CSS",
+          "color": "#663399",
+          "share": 0.7713959680486877
+        },
+        {
+          "name": "TypeScript",
+          "color": "#3178c6",
+          "share": 0.17306960821605172
+        }
+      ],
+      "topics": [
+        "d3-js",
+        "diff"
+      ]
     },
     "labyrinth": {
       "name": "labyrinth",
       "description": "Framework for publishing my obsidian notes. Made with Astro and Remark/Rehype. Supports math rendering with MathJax/TikZJax and syntax highlighting with Shiki.",
       "url": "https://github.com/alieron/labyrinth",
       "isPrivate": false,
-      "language": "TypeScript"
+      "language": "TypeScript",
+      "languages": [
+        {
+          "name": "TypeScript",
+          "color": "#3178c6",
+          "share": 0.6082344150037362
+        },
+        {
+          "name": "Astro",
+          "color": "#ff5a03",
+          "share": 0.31285142038146335
+        }
+      ],
+      "topics": [
+        "astro",
+        "obsidian",
+        "obsidian-md",
+        "static-site-generator"
+      ]
     },
     "biblio": {
       "name": "biblio",
       "description": null,
       "url": "https://github.com/alieron/biblio",
       "isPrivate": true,
-      "language": null
+      "language": null,
+      "languages": [],
+      "topics": []
     },
     "euler-ml": {
       "name": "euler-ml",
       "description": "Categorise things with a visual euler/venn diagram using markup style code.",
       "url": "https://github.com/alieron/euler-ml",
       "isPrivate": false,
-      "language": "TypeScript"
+      "language": "TypeScript",
+      "languages": [
+        {
+          "name": "TypeScript",
+          "color": "#3178c6",
+          "share": 0.88063977082836
+        },
+        {
+          "name": "HTML",
+          "color": "#e34c26",
+          "share": 0.11936022917164
+        }
+      ],
+      "topics": []
     },
     "cardinal": {
       "name": "cardinal",
       "description": "Stack-based esoteric programming language",
       "url": "https://github.com/alieron/cardinal",
       "isPrivate": false,
-      "language": "C"
+      "language": "C",
+      "languages": [
+        {
+          "name": "C",
+          "color": "#555555",
+          "share": 0.7217068645640075
+        },
+        {
+          "name": "Makefile",
+          "color": "#427819",
+          "share": 0.2782931354359926
+        }
+      ],
+      "topics": [
+        "esolang"
+      ]
     },
     "multiballs": {
       "name": "multiballs",
       "description": "Metaballs implemented across multiple windows with multithreading, using software rendering with X11.",
       "url": "https://github.com/alieron/multiballs",
       "isPrivate": false,
-      "language": "C"
+      "language": "C",
+      "languages": [
+        {
+          "name": "C",
+          "color": "#555555",
+          "share": 0.9861426870195951
+        }
+      ],
+      "topics": [
+        "interprocess-communication",
+        "metaballs",
+        "multithreading"
+      ]
     },
     "lambda": {
       "name": "lambda",
       "description": "Lambda calculus REPL",
       "url": "https://github.com/alieron/lambda",
       "isPrivate": false,
-      "language": "C"
+      "language": "C",
+      "languages": [
+        {
+          "name": "C",
+          "color": "#555555",
+          "share": 0.9773555439875065
+        }
+      ],
+      "topics": []
     },
     "obsidian-symbol-mapper": {
       "name": "obsidian-symbol-mapper",
       "description": "Search for UTF-8 special characters using your own keywords.",
       "url": "https://github.com/alieron/obsidian-symbol-mapper",
       "isPrivate": false,
-      "language": "TypeScript"
+      "language": "TypeScript",
+      "languages": [
+        {
+          "name": "TypeScript",
+          "color": "#3178c6",
+          "share": 0.828319099378882
+        },
+        {
+          "name": "JavaScript",
+          "color": "#f1e05a",
+          "share": 0.17168090062111802
+        }
+      ],
+      "topics": [
+        "obsidian",
+        "obsidian-plugin"
+      ]
     },
     "protocol-ml": {
       "name": "protocol-ml",
-      "description": "Markup language for rendering network protocol diagrams.",
+      "description": "Markup language and web renderer for drawing network protocol diagrams.",
       "url": "https://github.com/alieron/protocol-ml",
       "isPrivate": false,
-      "language": "TypeScript"
+      "language": "TypeScript",
+      "languages": [
+        {
+          "name": "TypeScript",
+          "color": "#3178c6",
+          "share": 0.9415620902790784
+        }
+      ],
+      "topics": [
+        "markup-language",
+        "network-protocol",
+        "diagrams"
+      ]
     },
     "linasm": {
       "name": "linasm",
       "description": "Single header linear algebra library with computations implemented with inline assembly.",
       "url": "https://github.com/alieron/linasm",
       "isPrivate": true,
-      "language": null
+      "language": null,
+      "languages": [],
+      "topics": []
     },
     "spase": {
       "name": "spase",
       "description": "Simple API that aggregates space events such as CMEs and solar flares, hosted on github pages, updated daily using github actions.",
       "url": "https://github.com/alieron/spase",
       "isPrivate": false,
-      "language": "Python"
+      "language": "Python",
+      "languages": [
+        {
+          "name": "Python",
+          "color": "#3572A5",
+          "share": 1.0
+        }
+      ],
+      "topics": [
+        "space",
+        "static-api",
+        "static-site"
+      ]
     },
     "microtube": {
       "name": "microtube",
       "description": "Break your youtube addiction by limiting your feed to a curated set of channels.",
       "url": "https://github.com/alieron/microtube",
       "isPrivate": true,
-      "language": null
+      "language": null,
+      "languages": [],
+      "topics": []
     },
     "brick-index": {
       "name": "brick-index",
       "description": "Bloomberg terminal style price tracker for LEGO minifigures.",
       "url": "https://github.com/alieron/brick-index",
       "isPrivate": true,
-      "language": null
+      "language": null,
+      "languages": [],
+      "topics": []
     },
     "wave": {
       "name": "wave",
       "description": "Ocean wave simulator as a practical self-directed learning tool to help students understand the fast fourier transform. Built for CS2108 project.",
       "url": "https://github.com/alieron/wave",
       "isPrivate": false,
-      "language": "TypeScript"
+      "language": "TypeScript",
+      "languages": [
+        {
+          "name": "TypeScript",
+          "color": "#3178c6",
+          "share": 0.9402594845315714
+        }
+      ],
+      "topics": [
+        "fourier-analysis",
+        "fourier-transform",
+        "waves",
+        "recharts",
+        "threejs"
+      ]
     },
     "dnfaction": {
       "name": "dnfaction",
       "description": "Using github actions in ways never intended, running DFA/NFAs.",
       "url": "https://github.com/alieron/dnfaction",
       "isPrivate": true,
-      "language": null
+      "language": null,
+      "languages": [],
+      "topics": []
     },
     "launch-tracker": {
       "name": "launch-tracker",
       "description": "Tracking past and upcoming launches from open APIs and automating post launch follow-up.",
       "url": "https://github.com/alieron/launch-tracker",
       "isPrivate": false,
-      "language": "HTML"
+      "language": "HTML",
+      "languages": [
+        {
+          "name": "HTML",
+          "color": "#e34c26",
+          "share": 0.7629816093867021
+        },
+        {
+          "name": "Python",
+          "color": "#3572A5",
+          "share": 0.23701839061329782
+        }
+      ],
+      "topics": [
+        "space"
+      ]
     },
     "wya": {
       "name": "wya",
       "description": "Keep track of where your friends are throughout the week. Using data from NUSMODS.",
       "url": "https://github.com/alieron/wya",
       "isPrivate": false,
-      "language": "TypeScript"
+      "language": "TypeScript",
+      "languages": [
+        {
+          "name": "TypeScript",
+          "color": "#3178c6",
+          "share": 0.9417215969388518
+        }
+      ],
+      "topics": [
+        "leaflet",
+        "react",
+        "nusmods-api"
+      ]
     },
     "workmon": {
       "name": "workmon",
       "description": "Monitor workflow runs across all your repos via a single TUI.",
       "url": "https://github.com/alieron/workmon",
       "isPrivate": true,
-      "language": "Python"
+      "language": "Python",
+      "languages": [
+        {
+          "name": "Python",
+          "color": "#3572A5",
+          "share": 1.0
+        }
+      ],
+      "topics": []
     },
     "sync-path-pr-action": {
       "name": "sync-path-pr-action",
       "description": "Github action to sync files/directories from another repo into a specified directory in the current repo.",
       "url": "https://github.com/alieron/sync-path-pr-action",
       "isPrivate": false,
-      "language": "TypeScript"
+      "language": "TypeScript",
+      "languages": [
+        {
+          "name": "TypeScript",
+          "color": "#3178c6",
+          "share": 1.0
+        }
+      ],
+      "topics": [
+        "cross-repo",
+        "sync",
+        "actions",
+        "ci-cd",
+        "typescript-action"
+      ]
     },
     "debth": {
       "name": "debth",
       "description": "Code review TUI to help keep track of technical debt in AI-assisted projects.",
       "url": "https://github.com/alieron/debth",
       "isPrivate": false,
-      "language": "Rust"
+      "language": "Rust",
+      "languages": [
+        {
+          "name": "Rust",
+          "color": "#dea584",
+          "share": 1.0
+        }
+      ],
+      "topics": [
+        "ratatui",
+        "technical-debt",
+        "tui"
+      ]
     },
     "Hackari/wholesome": {
       "name": "Hackari/wholesome",
       "description": "A wholesome bot for wholesome activities",
       "url": "https://github.com/Hackari/wholesome",
       "isPrivate": false,
-      "language": "TypeScript"
+      "language": "TypeScript",
+      "languages": [
+        {
+          "name": "TypeScript",
+          "color": "#3178c6",
+          "share": 1.0
+        }
+      ],
+      "topics": []
     },
     "e18e/cli": {
       "name": "e18e/cli",
       "description": "A powerful CLI for analyzing and optimizing your JS/TS projects.",
       "url": "https://github.com/e18e/cli",
       "isPrivate": false,
-      "language": "TypeScript"
+      "language": "TypeScript",
+      "languages": [
+        {
+          "name": "TypeScript",
+          "color": "#3178c6",
+          "share": 0.9960457649069299
+        }
+      ],
+      "topics": []
     }
   }
 }
