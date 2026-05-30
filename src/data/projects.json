@@ -2,8 +2,10 @@
   "username": "alieron",
   "categories": {
     "full afterburner": [
+      "etoile",
       "protocol-ml",
       "debth",
+      "Thanos-Labs/naval-data",
       "Hackari/wholesome"
     ],
     "slow and steady": [
@@ -31,6 +33,7 @@
     ],
     "done for now": [
       "spase",
+      "hyproject",
       "multiballs",
       "launch-tracker",
       "png_utils"
@@ -66,7 +69,8 @@
       "topics": [
         "fractals",
         "matplotlib"
-      ]
+      ],
+      "website": null
     },
     "hand_tracking": {
       "name": "hand_tracking",
@@ -86,7 +90,8 @@
         "matplotlib",
         "mediapipe-hands",
         "opencv"
-      ]
+      ],
+      "website": null
     },
     "cube_rendered_in_terminal": {
       "name": "cube_rendered_in_terminal",
@@ -105,7 +110,8 @@
         "graphics",
         "rasterization",
         "terminal-based"
-      ]
+      ],
+      "website": null
     },
     "caliberscan": {
       "name": "caliberscan",
@@ -125,7 +131,8 @@
           "share": 0.301937207748831
         }
       ],
-      "topics": []
+      "topics": [],
+      "website": null
     },
     "quill": {
       "name": "quill",
@@ -144,7 +151,8 @@
         "opengl",
         "renderer",
         "imgui"
-      ]
+      ],
+      "website": null
     },
     "png_utils": {
       "name": "png_utils",
@@ -163,7 +171,8 @@
         "png",
         "huffman-compression",
         "terminal-based"
-      ]
+      ],
+      "website": null
     },
     "flywheel": {
       "name": "flywheel",
@@ -172,7 +181,8 @@
       "isPrivate": false,
       "language": null,
       "languages": [],
-      "topics": []
+      "topics": [],
+      "website": null
     },
     "axist": {
       "name": "axist",
@@ -181,7 +191,8 @@
       "isPrivate": false,
       "language": null,
       "languages": [],
-      "topics": []
+      "topics": [],
+      "website": null
     },
     "obsidian-sequencer": {
       "name": "obsidian-sequencer",
@@ -199,11 +210,12 @@
       "topics": [
         "obsidian",
         "obsidian-plugin"
-      ]
+      ],
+      "website": null
     },
     "roots": {
       "name": "roots",
-      "description": "Collaborative family tree tracking using D3 graphs instead of the traditional tree structure.",
+      "description": "Collaborative family tree tracking using D3.js graphs instead of the traditional tree structure.",
       "url": "https://github.com/alieron/roots",
       "isPrivate": false,
       "language": "CSS",
@@ -220,9 +232,10 @@
         }
       ],
       "topics": [
-        "d3-js",
-        "diff"
-      ]
+        "d3js",
+        "graph"
+      ],
+      "website": null
     },
     "labyrinth": {
       "name": "labyrinth",
@@ -245,9 +258,12 @@
       "topics": [
         "astro",
         "obsidian",
-        "obsidian-md",
-        "static-site-generator"
-      ]
+        "static-site-generator",
+        "cms-framework",
+        "rehype",
+        "remark"
+      ],
+      "website": "https://alieron.github.io/labyrinth/"
     },
     "biblio": {
       "name": "biblio",
@@ -256,7 +272,8 @@
       "isPrivate": true,
       "language": null,
       "languages": [],
-      "topics": []
+      "topics": [],
+      "website": null
     },
     "euler-ml": {
       "name": "euler-ml",
@@ -276,7 +293,8 @@
           "share": 0.11936022917164
         }
       ],
-      "topics": []
+      "topics": [],
+      "website": null
     },
     "cardinal": {
       "name": "cardinal",
@@ -298,7 +316,8 @@
       ],
       "topics": [
         "esolang"
-      ]
+      ],
+      "website": null
     },
     "multiballs": {
       "name": "multiballs",
@@ -317,7 +336,8 @@
         "interprocess-communication",
         "metaballs",
         "multithreading"
-      ]
+      ],
+      "website": null
     },
     "lambda": {
       "name": "lambda",
@@ -332,7 +352,8 @@
           "share": 0.9773555439875065
         }
       ],
-      "topics": []
+      "topics": [],
+      "website": null
     },
     "obsidian-symbol-mapper": {
       "name": "obsidian-symbol-mapper",
@@ -355,7 +376,8 @@
       "topics": [
         "obsidian",
         "obsidian-plugin"
-      ]
+      ],
+      "website": null
     },
     "protocol-ml": {
       "name": "protocol-ml",
@@ -374,7 +396,8 @@
         "markup-language",
         "network-protocol",
         "diagrams"
-      ]
+      ],
+      "website": "https://alieron.github.io/protocol-ml/"
     },
     "linasm": {
       "name": "linasm",
@@ -383,7 +406,8 @@
       "isPrivate": true,
       "language": null,
       "languages": [],
-      "topics": []
+      "topics": [],
+      "website": null
     },
     "spase": {
       "name": "spase",
@@ -402,7 +426,8 @@
         "space",
         "static-api",
         "static-site"
-      ]
+      ],
+      "website": "https://alieron.github.io/spase/"
     },
     "microtube": {
       "name": "microtube",
@@ -411,7 +436,8 @@
       "isPrivate": true,
       "language": null,
       "languages": [],
-      "topics": []
+      "topics": [],
+      "website": null
     },
     "brick-index": {
       "name": "brick-index",
@@ -420,7 +446,8 @@
       "isPrivate": true,
       "language": null,
       "languages": [],
-      "topics": []
+      "topics": [],
+      "website": null
     },
     "wave": {
       "name": "wave",
@@ -441,7 +468,8 @@
         "waves",
         "recharts",
         "threejs"
-      ]
+      ],
+      "website": "https://alieron.github.io/wave/"
     },
     "dnfaction": {
       "name": "dnfaction",
@@ -450,7 +478,8 @@
       "isPrivate": true,
       "language": null,
       "languages": [],
-      "topics": []
+      "topics": [],
+      "website": null
     },
     "launch-tracker": {
       "name": "launch-tracker",
@@ -462,17 +491,18 @@
         {
           "name": "HTML",
           "color": "#e34c26",
-          "share": 0.7629816093867021
+          "share": 0.8134762976082205
         },
         {
           "name": "Python",
           "color": "#3572A5",
-          "share": 0.23701839061329782
+          "share": 0.18652370239177957
         }
       ],
       "topics": [
         "space"
-      ]
+      ],
+      "website": "https://alieron.github.io/launch-tracker/"
     },
     "wya": {
       "name": "wya",
@@ -491,7 +521,8 @@
         "leaflet",
         "react",
         "nusmods-api"
-      ]
+      ],
+      "website": "https://alieron.github.io/wya/"
     },
     "workmon": {
       "name": "workmon",
@@ -506,7 +537,29 @@
           "share": 1.0
         }
       ],
-      "topics": []
+      "topics": [],
+      "website": null
+    },
+    "hyproject": {
+      "name": "hyproject",
+      "description": "Hyprland profile-based monitor projection manager, for working with monitor hotplug.",
+      "url": "https://github.com/alieron/hyproject",
+      "isPrivate": true,
+      "language": "Go",
+      "languages": [
+        {
+          "name": "Go",
+          "color": "#00ADD8",
+          "share": 1.0
+        }
+      ],
+      "topics": [
+        "daemon",
+        "display",
+        "hyprland",
+        "wofi"
+      ],
+      "website": null
     },
     "sync-path-pr-action": {
       "name": "sync-path-pr-action",
@@ -527,7 +580,8 @@
         "actions",
         "ci-cd",
         "typescript-action"
-      ]
+      ],
+      "website": null
     },
     "debth": {
       "name": "debth",
@@ -546,7 +600,49 @@
         "ratatui",
         "technical-debt",
         "tui"
-      ]
+      ],
+      "website": null
+    },
+    "etoile": {
+      "name": "etoile",
+      "description": "3D stellar explorer built with Three.js",
+      "url": "https://github.com/alieron/etoile",
+      "isPrivate": false,
+      "language": "Jupyter Notebook",
+      "languages": [
+        {
+          "name": "Jupyter Notebook",
+          "color": "#DA5B0B",
+          "share": 0.9775676437161861
+        }
+      ],
+      "topics": [
+        "data-visualization",
+        "space",
+        "threejs"
+      ],
+      "website": "https://alieron.github.io/etoile/"
+    },
+    "Thanos-Labs/naval-data": {
+      "name": "Thanos-Labs/naval-data",
+      "description": "Data repository for static data associated with the naval eye project. Includes data for aircraft carriers, major ports and naval bases, and naval choke points.",
+      "url": "https://github.com/Thanos-Labs/naval-data",
+      "isPrivate": false,
+      "language": "TypeScript",
+      "languages": [
+        {
+          "name": "TypeScript",
+          "color": "#3178c6",
+          "share": 0.9646913707149098
+        }
+      ],
+      "topics": [
+        "data-visualization",
+        "leaflet",
+        "react",
+        "vite"
+      ],
+      "website": "https://thanos-labs.github.io/naval-data/"
     },
     "Hackari/wholesome": {
       "name": "Hackari/wholesome",
@@ -561,7 +657,8 @@
           "share": 1.0
         }
       ],
-      "topics": []
+      "topics": [],
+      "website": null
     },
     "e18e/cli": {
       "name": "e18e/cli",
@@ -573,10 +670,11 @@
         {
           "name": "TypeScript",
           "color": "#3178c6",
-          "share": 0.9960457649069299
+          "share": 0.9960413661889711
         }
       ],
-      "topics": []
+      "topics": [],
+      "website": null
     }
   }
 }
