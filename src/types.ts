@@ -12,6 +12,7 @@ export type Project = {
   languages?: ProjectLanguage[];
   topics?: string[];
   language: string | null;
+  website: string | null;
 };
 
 export type ProjectsData = {

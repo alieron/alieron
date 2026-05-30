@@ -35,6 +35,7 @@ def repo_topics(repo):
     topics = repo.get("repositoryTopics") or {}
     return [node["topic"]["name"] for node in topics.get("nodes", [])]
 
+
 def parse_repo_ref(ref):
     if not isinstance(ref, str):
         raise TypeError(f"project entries must be strings, got {type(ref).__name__}")
@@ -43,7 +44,7 @@ def parse_repo_ref(ref):
     github_prefix = "https://github.com/"
 
     if ref.startswith(github_prefix):
-        path = ref[len(github_prefix):].strip("/")
+        path = ref[len(github_prefix) :].strip("/")
         parts = path.split("/")
         if len(parts) >= 2 and parts[0] and parts[1]:
             return {"key": ref, "owner": parts[0], "name": parts[1], "external": True}
@@ -59,6 +60,8 @@ def parse_repo_ref(ref):
 def repo_payload(repo, display_name=None):
     languages = repo_languages(repo)
 
+    website = repo.get("homepageUrl")
+
     return {
         "name": display_name or repo["name"],
         "description": repo.get("description"),
@@ -67,6 +70,7 @@ def repo_payload(repo, display_name=None):
         "language": languages[0]["name"] if languages else None,
         "languages": languages,
         "topics": repo_topics(repo),
+        "website": website if website else None,
     }
 
 
@@ -75,7 +79,7 @@ own_names = {repo["name"] for repo in repo_refs if not repo["external"]}
 external_refs = [repo for repo in repo_refs if repo["external"]]
 
 external_queries = "\n".join(
-    f'  external{i}: repository(owner: {json.dumps(repo["owner"])}, name: {json.dumps(repo["name"])}) {{ ...RepoFields }}'
+    f"  external{i}: repository(owner: {json.dumps(repo['owner'])}, name: {json.dumps(repo['name'])}) {{ ...RepoFields }}"
     for i, repo in enumerate(external_refs)
 )
 
@@ -97,6 +101,7 @@ fragment RepoFields on Repository {
   description
   url
   isPrivate
+  homepageUrl
   primaryLanguage { name }
   languages(first: 10, orderBy: { field: SIZE, direction: DESC }) {
     totalSize
@@ -126,11 +131,7 @@ with urllib.request.urlopen(req) as res:
     data = json.loads(res.read())["data"]
     nodes = data["viewer"]["repositories"]["nodes"]
 
-repo_map = {
-    r["name"]: repo_payload(r)
-    for r in nodes
-    if r["name"] in own_names
-}
+repo_map = {r["name"]: repo_payload(r) for r in nodes if r["name"] in own_names}
 
 for i, ref in enumerate(external_refs):
     repo = data.get(f"external{i}")
