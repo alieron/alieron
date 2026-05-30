@@ -3,8 +3,10 @@ language_threshold: 0.1
 
 categories:
   "full afterburner":
+    - etoile
     - protocol-ml
     - debth
+    - Thanos-Labs/naval-data
     - Hackari/wholesome
 
   "slow and steady":
@@ -32,6 +34,7 @@ categories:
 
   "done for now":
     - spase
+    - hyproject
     - multiballs
     - launch-tracker
     - png_utils
