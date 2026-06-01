@@ -542,7 +542,7 @@
     },
     "hyproject": {
       "name": "hyproject",
-      "description": "Hyprland profile-based monitor projection manager, for working with monitor hotplug.",
+      "description": "Hyprland profile-based monitor management daemon, that listens to monitor hotplug events. It also provides display menu options for use with wofi.",
       "url": "https://github.com/alieron/hyproject",
       "isPrivate": true,
       "language": "Go",
@@ -622,27 +622,6 @@
         "threejs"
       ],
       "website": "https://alieron.github.io/etoile/"
-    },
-    "Thanos-Labs/naval-data": {
-      "name": "Thanos-Labs/naval-data",
-      "description": "Data repository for static data associated with the naval eye project. Includes data for aircraft carriers, major ports and naval bases, and naval choke points.",
-      "url": "https://github.com/Thanos-Labs/naval-data",
-      "isPrivate": false,
-      "language": "TypeScript",
-      "languages": [
-        {
-          "name": "TypeScript",
-          "color": "#3178c6",
-          "share": 0.9646913707149098
-        }
-      ],
-      "topics": [
-        "data-visualization",
-        "leaflet",
-        "react",
-        "vite"
-      ],
-      "website": "https://thanos-labs.github.io/naval-data/"
     },
     "Hackari/wholesome": {
       "name": "Hackari/wholesome",
