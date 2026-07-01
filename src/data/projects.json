@@ -341,7 +341,7 @@
     },
     "lambda": {
       "name": "lambda",
-      "description": "Lambda calculus REPL",
+      "description": "Lambda calculus REPL.",
       "url": "https://github.com/alieron/lambda",
       "isPrivate": false,
       "language": "C",
@@ -352,7 +352,10 @@
           "share": 0.9773555439875065
         }
       ],
-      "topics": [],
+      "topics": [
+        "lambda-calculus",
+        "repl"
+      ],
       "website": null
     },
     "obsidian-symbol-mapper": {
@@ -444,9 +447,17 @@
       "description": "Bloomberg terminal style price tracker for LEGO minifigures.",
       "url": "https://github.com/alieron/brick-index",
       "isPrivate": true,
-      "language": null,
-      "languages": [],
-      "topics": [],
+      "language": "Python",
+      "languages": [
+        {
+          "name": "Python",
+          "color": "#3572A5",
+          "share": 1.0
+        }
+      ],
+      "topics": [
+        "nextjs"
+      ],
       "website": null
     },
     "wave": {
@@ -500,7 +511,9 @@
         }
       ],
       "topics": [
-        "space"
+        "space",
+        "globe",
+        "threejs"
       ],
       "website": "https://alieron.github.io/launch-tracker/"
     },
@@ -613,7 +626,7 @@
         {
           "name": "Jupyter Notebook",
           "color": "#DA5B0B",
-          "share": 0.9775676437161861
+          "share": 0.984397759654122
         }
       ],
       "topics": [
@@ -649,7 +662,7 @@
         {
           "name": "TypeScript",
           "color": "#3178c6",
-          "share": 0.9960413661889711
+          "share": 0.9960411839621918
         }
       ],
       "topics": [],
