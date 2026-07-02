@@ -4,17 +4,19 @@ language_threshold: 0.1
 categories:
   "full afterburner":
     - etoile
+    - verbose
+    - euler-ml
     - protocol-ml
-    - debth
     - Thanos-Labs/naval-data
-    - Hackari/wholesome
+    - brick-index
+    - rekal
 
   "slow and steady":
     - cardinal
     - lambda
-    - euler-ml
-    - workmon
     - wya
+    - Hackari/wholesome
+    - Thanos-Labs/writeups
 
   "open source":
     - e18e/cli
@@ -41,7 +43,8 @@ categories:
 
   pause:
     - dnfaction
-    - brick-index
+    - workmon
+    - debth
     - microtube
     - linasm
     - roots
