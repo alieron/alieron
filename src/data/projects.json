@@ -676,6 +676,27 @@
       "topics": [],
       "website": null
     },
+    "Thanos-Labs/naval-data": {
+      "name": "Thanos-Labs/naval-data",
+      "description": "Data repository for static data associated with the naval eye project. Includes data for aircraft carriers, major ports and naval bases, and naval choke points.",
+      "url": "https://github.com/Thanos-Labs/naval-data",
+      "isPrivate": false,
+      "language": "TypeScript",
+      "languages": [
+        {
+          "name": "TypeScript",
+          "color": "#3178c6",
+          "share": 0.97717152920848
+        }
+      ],
+      "topics": [
+        "data-visualization",
+        "leaflet",
+        "react",
+        "vite"
+      ],
+      "website": "https://thanos-labs.github.io/naval-data/"
+    },
     "Hackari/wholesome": {
       "name": "Hackari/wholesome",
       "description": "A wholesome bot for wholesome activities",
@@ -689,6 +710,16 @@
           "share": 1.0
         }
       ],
+      "topics": [],
+      "website": null
+    },
+    "Thanos-Labs/writeups": {
+      "name": "Thanos-Labs/writeups",
+      "description": null,
+      "url": "https://github.com/Thanos-Labs/writeups",
+      "isPrivate": false,
+      "language": null,
+      "languages": [],
       "topics": [],
       "website": null
     },
