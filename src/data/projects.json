@@ -3,17 +3,19 @@
   "categories": {
     "full afterburner": [
       "etoile",
+      "verbose",
+      "euler-ml",
       "protocol-ml",
-      "debth",
       "Thanos-Labs/naval-data",
-      "Hackari/wholesome"
+      "brick-index",
+      "rekal"
     ],
     "slow and steady": [
       "cardinal",
       "lambda",
-      "euler-ml",
-      "workmon",
-      "wya"
+      "wya",
+      "Hackari/wholesome",
+      "Thanos-Labs/writeups"
     ],
     "open source": [
       "e18e/cli"
@@ -40,7 +42,8 @@
     ],
     "pause": [
       "dnfaction",
-      "brick-index",
+      "workmon",
+      "debth",
       "microtube",
       "linasm",
       "roots",
@@ -635,6 +638,43 @@
         "threejs"
       ],
       "website": "https://alieron.github.io/etoile/"
+    },
+    "rekal": {
+      "name": "rekal",
+      "description": "Web app to simplify the collection and revisiting of random ideas and resources.",
+      "url": "https://github.com/alieron/rekal",
+      "isPrivate": false,
+      "language": "TypeScript",
+      "languages": [
+        {
+          "name": "TypeScript",
+          "color": "#3178c6",
+          "share": 0.9915547024952015
+        }
+      ],
+      "topics": [],
+      "website": "https://rekal.vercel.app/"
+    },
+    "verbose": {
+      "name": "verbose",
+      "description": null,
+      "url": "https://github.com/alieron/verbose",
+      "isPrivate": true,
+      "language": "TypeScript",
+      "languages": [
+        {
+          "name": "TypeScript",
+          "color": "#3178c6",
+          "share": 0.7582614942528736
+        },
+        {
+          "name": "JavaScript",
+          "color": "#f1e05a",
+          "share": 0.10614224137931035
+        }
+      ],
+      "topics": [],
+      "website": null
     },
     "Hackari/wholesome": {
       "name": "Hackari/wholesome",
